@@ -3,7 +3,8 @@ name: terraform_workflow
 on: 
   push: 
     branches:
-      - feature-branch  # Trigger workflow on push to main branch
+      - main  # Trigger workflow on push to main branch
+
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
